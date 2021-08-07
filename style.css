@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-page {
+    text-align: center;
+    margin: 30px 30px 50px;
+    font-size: 69px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    --height: 40px;
+    text-decoration: none;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    min-width: 120px;
+    height: var(--height);
+    line-height: var(--height);
+    text-align: center;
+    padding: 0 20px;
+    border-radius: calc(var(--height)/2);
+    font-weight: 600;
+    color: white;
+    transition: opacity 0.1s ease-in;
+}
+
+.btn:hover {
+    opacity: 0.4;
+}
+
+.btn+.btn {
+    margin-left: 10px;
+}
+
+.btn--success {
+    background-color: rgb(0, 255, 115);
+}
+
+.btn--disable {
+    opacity: 0.4 !important;
+    cursor: default;
+}
+
+.btn-again {
+    background-color: rgb(253, 215, 45);
+}
+
+.btn-warning {
+    background-color: rgb(255, 8, 0);
+}
